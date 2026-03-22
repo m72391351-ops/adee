@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday My  Adeeba ❤️</title>
+  <link rel="stylesheet" href="adee.css">
+ 
+</head>
+<body>
+
+  <h1>Happy Birthday My Love Adeeba ❤️</h1>
+
+  <p>
+    You are the most special person in my life.  
+    Every moment with you feels like a dream.  
+    Bhai i waited the most for this day kyuki tu meri sbse khaas hai,meri jaan hai tu
+    tu itni sundar hai ki tujhe dekhte hi tere msg ko dekhte hi sara gussa ladai saari buri cheeze dimaag se nikal jaati hai
+    yaar tu bohot pyaari hai,i really want u as my wife,tere ma baap ko pair pakad ke pranam ki unhone tujhe janm diya
+    tujhe dekh kr kon pyaar nhi krega bhai,dekh tu khud ko,mai to mombati ki tarah pighal jata hu,itni sundar ladki,upar se teri awazz,tujhe kya hi
+    pta ki mai tere msg dekh kr sala kitna khsuh hota hu
+    Today is all about celebrating YOU 💕
+  </p>
+
+  <button onclick="showSurprise()">Click for Surprise 🎁</button>
+
+  <div class="hidden" id="surprise">
+    <h2>I Love You So Much ❤️</h2>
+    <p>
+      Thank you for making my life beautiful.  
+      I promise to always be there for you 💖
+    </p>
+
+    <!-- Replace with your images -->
+    <img src="https://via.placeholder.com/200" class="photo">
+    <img src="https://via.placeholder.com/200" class="photo">
+  </div>
+
+  <script>
+    function showSurprise() {
+      document.getElementById("surprise").style.display = "block";
+    }
+
+    // Floating hearts
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
+
+</body>
+</html>
